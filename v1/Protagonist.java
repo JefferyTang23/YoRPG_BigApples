@@ -5,20 +5,17 @@ LAB01 -- YoRPG
 2021-11-22
 time spent: .5 hours
 */
-public class Protagonist {
+public class Protagonist extends Character{
   private String name;
-  private int health;
-  private int defense;
-  private int atk;
-  private int specialpower;
-  private double ar;
+  private int specialPower;
 
   public Protagonist() {
-    name = "Pat";
+    name = "Pat"; 
     health = 200;
     defense = 10;
-    atk = 40;
-    specialpower = (int) Math.random() * 15;
+    strength = 40;
+    specialPower = (int) Math.random() * 15;
+    ar = Math.random();
   }
 
   public Protagonist( String setName) {
@@ -29,30 +26,14 @@ public class Protagonist {
 
   // methods
 
-  public boolean isAlive(){
-    return health > 0;
-  }
-
-  public void lowerHP(int dmg) {
-    health -= dmg;
-  }
-
   public void specialize() {
-    atk += specialpower;
+    strength += specialPower;
+    defense -= (specialPower / 2);
   }
 
   public void normalize() {
-    defense += specialpower;
-  }
-
-  public int attack(Monster monster) {
-    int damage = (int)(getATK() - monster.getDefense());
-    if (damage > 0) {
-      monster.lowerHP(damage);
-    } else {
-      damage = 0;
-    }
-    return damage;
+    defense += specialPower;
+    strength -= (specialPower / 2);
   }
 
   //accessing instance variable
@@ -65,12 +46,9 @@ public class Protagonist {
     return health;
   }
 
-  public int getDefense () {
-    return defense;
-  }
 
-  public int getATK () {
-    return atk;
+  public int getStrength () {
+    return strength;
   }
 
 
@@ -89,8 +67,8 @@ public class Protagonist {
     defense = newDefense;
   }
 
-  public void setStrength (int newATK) {
-    atk = newATK;
+  public void setStrength (int newStrength) {
+    strength = newStrength;
   }
 
 
