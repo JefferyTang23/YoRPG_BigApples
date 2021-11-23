@@ -5,7 +5,7 @@ public class Character {
   private double ar;
 
   public boolean isAlive() {
-    return (hp > 0);
+    return (health > 0);
   }
 
   public int getDefense() {
