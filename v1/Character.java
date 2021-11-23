@@ -19,7 +19,7 @@ public class Character {
   public int attack(Character character) {
     int damage = (int)((strength * ar) - character.getDefense());
     if (damage > 0) {
-      character.bleed(damage);
+      character.lowerHP(damage);
     } else {
       damage = 0;
     }
