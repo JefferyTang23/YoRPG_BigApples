@@ -22,33 +22,6 @@ public class Monster extends Character{
     strength = (int) (Math.random() * 30 + 11);
     ar = Math.random(); 
   }
-
-
-  // accessing instance variables
-
-  public int getHp () {
-    return health;
-  }
-
-  public int getStrength() {
-    return strength;
-  }
-
-
-
-
-  // changing instance variables
-
-  public void setHP(int newHP) {
-    health = newHP;
-  }
-
-  public void setDefense(int newDefense) {
-    defense = newDefense;
-  }
-
-  public void setStrength(int newStrength) {
-    strength = newStrength;
-  }
+  
 }
 
