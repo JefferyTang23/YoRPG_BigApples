@@ -1,4 +1,4 @@
-Big Apples ( Weichen Liu + Blueface, Jeffery Tang + , Lior + Toothless) 
+Big Apples (Weichen Liu + Blueface, Jeffery Tang + Mathias, Lior + Toothless)
 APCS
 lab01 -- Developing a RPG game
 2021-11-22
@@ -8,4 +8,5 @@ DISCO
 - The instance variables in the super class cannot be private if you want to access them in the sub classes. 
 
 QCC
-- Is there other visibility types in Java?
+- Are there other visibility types in Java?
+
