@@ -13,7 +13,7 @@ public class Character {
   }
 
   public void lowerHP(int damage) {
-    hp -= damage; 
+    health -= damage; 
   }
 
   public int attack(Character character) {
