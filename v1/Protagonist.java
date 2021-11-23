@@ -51,34 +51,10 @@ public class Protagonist extends Character{
     return name;
   }
 
-  public int getHP () {
-    return health;
-  }
-
-
-  public int getStrength () {
-    return strength;
-  }
-
-
-
   //Changing instance variables
 
   public void setName (String newName) {
     name = newName;
   }
-
-  public void setHP (int newHP) {
-    health = newHP;
-  }
-
-  public void setDefense (int newDefense) {
-    defense = newDefense;
-  }
-
-  public void setStrength (int newStrength) {
-    strength = newStrength;
-  }
-
-
+  
 }
