@@ -4,7 +4,16 @@ APCS
 LAB01 -- YoRPG
 2021-11-22
 time spent: .5 hours
+
+DISCO
+-
+
+QCC
+-
+
+
 */
+
 public class Protagonist extends Character{
   private String name;
   private int specialPower;
