@@ -23,7 +23,7 @@ public class Protagonist extends Character{
     health = 200;
     defense = 10;
     strength = 40;
-    specialPower = (int) ((Math.random() * 15) + 5);
+    specialPower = (int) Math.random() * 15 + 5;
     ar = Math.random();
   }
 
