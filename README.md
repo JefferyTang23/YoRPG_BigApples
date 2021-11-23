@@ -1,2 +1,5 @@
 # YoRPG_BigApples
-* Weichen Liu, Jeffery Tang, Lior 
+* Weichen Liu + Blueface, Jeffery Tang + Mathias, Lior + Toothless
+
+
+
