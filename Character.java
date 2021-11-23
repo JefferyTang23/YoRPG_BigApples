@@ -41,5 +41,6 @@ public class Character {
     }
     return damage;
   }
+  
 }
 
