@@ -1,3 +1,19 @@
+/*
+Big Apples (Weichen Liu + Blueface, Jeffery Tang + Mathias, Lior + Toothless)
+APCS
+LAB01 -- YoRPG
+2021-11-22
+time spent: .5 hours
+
+DISCO
+-
+
+QCC
+-
+
+
+*/
+
 public class Character {
   public int health;
   public int strength;
