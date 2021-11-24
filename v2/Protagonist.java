@@ -17,16 +17,9 @@ public class Protagonist extends Character{
   private int specialPower;
 
   public Protagonist() {
-    name = "Pat"; 
-    health = 200;
-    defense = 10;
-    strength = 40;
-    specialPower = (int) ((Math.random() * 15) + 5);
-    ar = Math.random();
   }
 
   public Protagonist( String setName) {
-    this();
     name = setName;
   }
 
