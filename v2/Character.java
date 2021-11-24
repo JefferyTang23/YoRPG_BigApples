@@ -6,7 +6,7 @@ lab01(v2) -- Developing subclasses for Protagonist and Monster
 time spent: 0.8 hours
 
 DISCO
-- The instance variables in the super class cannot be private if you want to access them in the sub classes. 
+- The instance variables in the super class cannot be private if you want to access them in the sub classes.
 
 QCC
 - Are there other visibility types in Java?
@@ -23,11 +23,11 @@ public class Character {
   }
 
   public int getDefense() {
-    return defense; 
+    return defense;
   }
 
   public void lowerHP(int damage) {
-    health -= damage; 
+    health -= damage;
   }
 
   public int attack(Character character) {
@@ -39,5 +39,5 @@ public class Character {
     }
     return damage;
   }
-  
+
 }

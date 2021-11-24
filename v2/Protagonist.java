@@ -6,7 +6,7 @@ lab01(v2) -- Developing subclasses for Protagonist and Monster
 time spent: 0.8 hours
 
 DISCO
-- The instance variables in the super class cannot be private if you want to access them in the sub classes. 
+- The instance variables in the super class cannot be private if you want to access them in the sub classes.
 
 QCC
 - Are there other visibility types in Java?
@@ -46,5 +46,5 @@ public class Protagonist extends Character{
   public void setName (String newName) {
     name = newName;
   }
-  
+
 }

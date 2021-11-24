@@ -6,7 +6,7 @@ lab01(v2) -- Developing subclasses for Protagonist and Monster
 time spent: 0.8 hours
 
 DISCO
-- The instance variables in the super class cannot be private if you want to access them in the sub classes. 
+- The instance variables in the super class cannot be private if you want to access them in the sub classes.
 
 QCC
 - Are there other visibility types in Java?
@@ -14,17 +14,17 @@ QCC
 
 public class Assassin extends Protagonist {
   public static String about() {
-    return "A protagonist with a lot of strength and attack rating.";
+    return "A protagonist with a lot of strength and attack rating, but with low survivability.";
   }
-  
+
   public Assassin() {
-    health = 200;
-    strength = 70;
-    defense = 20; 
+    health = 400;
+    strength = 120;
+    defense = 20;
     ar = 2;
-    specialPower = 5; 
+    specialPower = 5;
   }
-  
+
   public Assassin(String newName) {
     this();
     setName(newName);
