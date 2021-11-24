@@ -4,6 +4,11 @@ APCS
 LAB01 -- YoRPG
 2021-11-22
 time spent: .5 hours
+
+MODIFICATIONS
+- We added a choice for the player to make in the method newGame. They can chooise between Warrior, Assassin, and Tank. 
+- We added a random variable in the method playTurn that would allow us to generate random monsters. These monsters include Goblin, HobGoblin, and GobGeneral. 
+
 */
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
