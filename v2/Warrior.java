@@ -8,7 +8,7 @@ time spent: 0.8 hours
 
 public class Warrior extends Protagonist {
   public static String about() {
-    return "A protagonist with a lot of strength and defense."
+    return "A protagonist with a lot of strength and defense.";
   }
   
   public Warrior() {
