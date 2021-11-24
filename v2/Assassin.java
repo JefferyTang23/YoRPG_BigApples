@@ -8,7 +8,7 @@ time spent: 0.8 hours
 
 public class Assassin extends Protagonist {
   public static String about() {
-    return "A protagonist with a lot of strength and attack rating."
+    return "A protagonist with a lot of strength and attack rating.";
   }
   
   public Assassin() {
