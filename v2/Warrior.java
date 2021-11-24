@@ -26,7 +26,7 @@ public class Warrior extends Protagonist {
   }
   
     public Warrior(String setName) {
-    this();
     super(setName);
+    this();
   }
 }
