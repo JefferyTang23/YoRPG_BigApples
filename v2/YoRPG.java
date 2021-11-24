@@ -23,8 +23,12 @@ MODIFICATIONS
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
  *
  * DISCO:
+ * We are importing java.io and java.util. 
+ *
  *
  * QCC:
+ * What is IOException e?
+ *
  *
  **********************************************/
 
