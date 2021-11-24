@@ -13,8 +13,8 @@ QCC
 */
 
 public class Protagonist extends Character{
-  private String name;
-  private int specialPower;
+  protected String name;
+  protected int specialPower;
 
   public Protagonist() {
   }
