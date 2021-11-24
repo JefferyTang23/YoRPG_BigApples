@@ -1,8 +1,8 @@
 /*
 Big Apples (Weichen Liu + Blueface, Jeffery Tang + Mathias, Lior + Toothless)
 APCS
-lab01 -- Developing a RPG game
-2021-11-22
+lab01(v2) -- Developing subclasses for Protagonist and Monster
+2021-11-23
 time spent: 0.8 hours
 
 DISCO
