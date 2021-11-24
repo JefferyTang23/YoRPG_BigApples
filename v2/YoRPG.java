@@ -135,7 +135,15 @@ public class YoRPG {
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    double random = Math.random();
+	    
+	    if (random < 0.33) {
+		    smaug = new Goblin();
+	    } else if (random < 0.66) {
+		    smaug = new HobGoblin();
+	    } else {
+		    smaug = new GobGeneral();
+	    }
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
