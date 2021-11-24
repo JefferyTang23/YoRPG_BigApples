@@ -25,8 +25,8 @@ public class Warrior extends Protagonist {
     specialPower = 5; 
   }
   
-    public Warrior(String setName) {
-    super(setName);
+  public Warrior(String newName) {
     this();
+    setName(newName);
   }
 }
