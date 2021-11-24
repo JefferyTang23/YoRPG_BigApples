@@ -91,8 +91,6 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
-    //instantiate the player's character
-    pat = new Protagonist( name );
 
     //Choose the player's subclass
     String protagClass = "";
@@ -107,6 +105,18 @@ public class YoRPG {
       protagClass = in.readLine();
     }
     catch ( IOException e) { }
+	  
+    //instantiate the player's character
+    if (protagClass.equals("Warrior")) {
+	    pat = new Warrior( name );
+    }
+    if (protagClass.equals("Tank")) {
+	    pat = new Tank( name );
+    }
+    if (protagClass.equals("Assassin")) {
+	    pat = new Assassin( name );
+    }
+
   }//end newGame()
 
 
