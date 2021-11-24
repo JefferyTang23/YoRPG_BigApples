@@ -98,7 +98,7 @@ public class YoRPG {
     s += "\tWarrior\n";
     s += "\tTank\n";
     s += "\tAssassin\n";
-    s += "\tSelection: ";
+    s += "Selection: ";
     System.out.print( s );
 
     try {
