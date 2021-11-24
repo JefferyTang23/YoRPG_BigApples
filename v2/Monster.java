@@ -15,10 +15,7 @@ QCC
 public class Monster extends Character{
 
   public Monster() {
-    health = 200;
-    defense = 10;
-    strength = (int) (Math.random() * 30 + 11);
-    ar = Math.random(); 
+    ar = Math.random() + 0.5; 
   }
 
 }
