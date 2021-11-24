@@ -94,6 +94,19 @@ public class YoRPG {
     //instantiate the player's character
     pat = new Protagonist( name );
 
+    //Choose the player's subclass
+    String protagClass = "";
+    s = "Choose your class :\n";
+    s += "\tWarrior\n";
+    s += "\tTank\n";
+    s += "\tAssassin\n";
+    s += "\tSelection: ";
+    System.out.print( s );
+
+    try {
+      protagClass = in.readLine();
+    }
+    catch ( IOException e) { }
   }//end newGame()
 
 
