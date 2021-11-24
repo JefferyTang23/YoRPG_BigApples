@@ -18,4 +18,9 @@ public class Assassin extends Protagonist {
     ar = 2;
     specialPower = 5; 
   }
+  
+  public Assassin(String setName) {
+    this();
+    super(setName);
+  }
 }
