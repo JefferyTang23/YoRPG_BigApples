@@ -8,7 +8,7 @@ time spent: 0.8 hours
 
 public class Tank extends Protagonist {
   public static String about() {
-    return "A protagonist with a lot of health and defense."
+    return "A protagonist with a lot of health and defense.";
   }
   
   public Tank() {
