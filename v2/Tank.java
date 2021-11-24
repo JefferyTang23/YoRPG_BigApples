@@ -18,4 +18,9 @@ public class Tank extends Protagonist {
     ar = 0.5;
     specialPower = 5; 
   }
+  
+  public Tank(String setName) {
+    this();
+    super(setName);
+  }
 }
