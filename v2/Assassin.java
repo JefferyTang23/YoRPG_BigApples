@@ -26,7 +26,7 @@ public class Assassin extends Protagonist {
   }
   
   public Assassin(String setName) {
-    this();
     super(setName);
+    this();
   }
 }
