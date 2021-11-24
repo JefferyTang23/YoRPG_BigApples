@@ -11,6 +11,10 @@ QCC
 */
 
 public class HobGoblin extends Monster{
+  
+  public static String about() {
+    return "A goblin that went to school and learned some martial arts.";
+  }
 
   public HobGoblin() {
     health = 200;
