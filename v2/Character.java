@@ -13,10 +13,10 @@ QCC
 */
 
 public class Character {
-  public int health;
-  public int strength;
-  public int defense;
-  public double ar;
+  protected int health;
+  protected int strength;
+  protected int defense;
+  protected double ar;
 
   public boolean isAlive() {
     return (health > 0);
