@@ -11,11 +11,16 @@ public class Warrior extends Protagonist {
     return "A protagonist with a lot of strength and defense."
   }
   
-  public Tank() {
+  public Warrior() {
     health = 300;
     strength = 70;
     defense = 40; 
     ar = 0.5;
     specialPower = 5; 
+  }
+  
+    public Warrior(String setName) {
+    this();
+    super(setName);
   }
 }
