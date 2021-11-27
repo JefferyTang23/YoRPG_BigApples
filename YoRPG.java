@@ -4,6 +4,11 @@ APCS
 LAB01 -- YoRPG
 2021-11-22
 time spent: .5 hours
+
+MODIFICATIONS
+- We added a choice for the player to make in the method newGame. They can chooise between Warrior, Assassin, and Tank.
+- We added a random variable in the method playTurn that would allow us to generate random monsters. These monsters include Goblin, HobGoblin, and GobGeneral.
+
 */
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
@@ -18,8 +23,12 @@ time spent: .5 hours
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
  *
  * DISCO:
+ * We are importing java.io and java.util.
+ *
  *
  * QCC:
+ * What is IOException e?
+ *
  *
  **********************************************/
 
@@ -91,8 +100,33 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
+
+    //Choose the player's subclass
+    String protagClass = "";
+    s = "Choose your class :\n";
+    s += "\tWarrior: " + Warrior.about() + "\n";
+    s += "\tTank: " + Tank.about() + "\n";
+    s += "\tAssassin: " + Assassin.about() + "\n";
+    s += "Selection: ";
+    System.out.print( s );
+
+    try {
+      protagClass = in.readLine();
+    }
+    catch ( IOException e) { }
+
     //instantiate the player's character
-    pat = new Protagonist( name );
+    if (protagClass.equals("Warrior")) {
+	    pat = new Warrior( name );
+    }
+    if (protagClass.equals("Tank")) {
+	    pat = new Tank( name );
+    }
+    if (protagClass.equals("Assassin")) {
+	    pat = new Assassin( name );
+    }
+
+    System.out.println("\nWelcome, " + protagClass + " " + name + "!");
 
   }//end newGame()
 
@@ -110,9 +144,23 @@ public class YoRPG {
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+
+	    double random = Math.random();
+      String monsterName = "";
+
+	    if (random < 0.33) {
+		    smaug = new Goblin();
+        monsterName = "Goblin";
+	    } else if (random < 0.66) {
+		    smaug = new HobGoblin();
+        monsterName = "Hob Goblin";
+	    } else {
+		    smaug = new GobGeneral();
+        monsterName = "Goblin General";
+	    }
+
+      System.out.println( "\nLo, yonder " + monsterName + " approacheth!" );
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
@@ -137,7 +185,7 @@ public class YoRPG {
         System.out.println( "\n" + pat.getName() + " dealt " + d1 +
                             " points of damage.");
 
-        System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+        System.out.println( "\n" + monsterName + " smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
 	    }//end while
 
