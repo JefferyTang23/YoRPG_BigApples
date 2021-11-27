@@ -1,32 +1,24 @@
 /*
 Big Apples (Weichen Liu + Blueface, Jeffery Tang + Mathias, Lior + Toothless)
 APCS
-lab01 -- Developing a RPG game
-2021-11-22
+lab01(v2) -- Developing subclasses for Protagonist and Monster
+2021-11-23
 time spent: 0.8 hours
 
 DISCO
-- The instance variables in the super class cannot be private if you want to access them in the sub classes. 
+- The instance variables in the super class cannot be private if you want to access them in the sub classes.
 
 QCC
 - Are there other visibility types in Java?
 */
-
 public class Protagonist extends Character{
-  private String name;
-  private int specialPower;
+  protected String name;
+  protected int specialPower;
 
   public Protagonist() {
-    name = "Pat"; 
-    health = 200;
-    defense = 10;
-    strength = 40;
-    specialPower = (int) ((Math.random() * 15) + 5);
-    ar = Math.random();
   }
 
   public Protagonist( String setName) {
-    this();
     name = setName;
   }
 
@@ -54,5 +46,5 @@ public class Protagonist extends Character{
   public void setName (String newName) {
     name = newName;
   }
-  
+
 }
