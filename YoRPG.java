@@ -23,13 +23,14 @@ MODIFICATIONS
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
  *
  * DISCO:
- * We are importing java.io and java.util.
- *
+ * The instance variables in the super class cannot be private if you want to access them in the sub classes.
+ * The Object type can match variable type, or be any subclass of declared variable type. 
+ * If a method accepts a superclass, you can also parameter pass its subclasses. 
  *
  * QCC:
  * What is IOException e?
- *
- *
+ * Are there other visibility types in Java?
+ * How do you use both this() and super() in the same method? 
  **********************************************/
 
 import java.io.*;
